@@ -1,0 +1,28 @@
+.button-controller {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-top: 20px;
+  }
+  
+  .up-button,
+  .down-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .up-button:hover,
+  .down-button:hover {
+    background-color: #dddddd;
+  }
+  
+  .up-button:active,
+  .down-button:active {
+    background-color: #aaaaaa;
+  }
+  

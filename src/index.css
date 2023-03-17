@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+  .retro-bg {
+    background-color: #0f0f0f;
+    background-image: radial-gradient(#1b1b1b 25%, transparent 20%),
+                      radial-gradient(#1b1b1b 25%, transparent 20%);
+    background-size: 50px 50px;
+    background-position: 0 0, 25px 25px;
+  }
+
+  .retro-text {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    color: #00ff00;
+  }
+
+  .btn {
+    background-color: #f3f4f6;
+    border: none;
+    color: #111827;
+    font-size: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    transition: background-color 0.15s ease-in-out;
+  }
+
+  .btn:hover {
+    background-color: #e5e7eb;
+  }
+
+  .btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+  }
+
+  @media (max-width: 640px) {
+    .calculator {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
